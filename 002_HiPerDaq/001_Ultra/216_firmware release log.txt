@@ -1,0 +1,22 @@
+1.10 21-5-2023 PM
+- Added Websever with GET and DELETE methods implemented
+- Debugged remaining issues with Ethernet functions
+- Determined reliable limits for Ethernet UDP streaming
+- added streamConfig parameter to config
+- created 4 stream data formats configurable by streamConfig
+
+
+1.05 5-5-2023 AM
+- added liveRate parameter and functionality to change live mode update rate from 1, 2 or 4Hz by changing ADC rate from 1000, 2000 or 4000Hz
+
+
+1.04 4-5-2023
+- Improved thread time slicing to support higher streaming rates
+- change to streaming logic to eliminate dropped data
+
+
+1.02 30-4-2023 
+- Addition of Binary float mode for streaming
+- resolved bug relating to UDP streaming - packet size aligned to streaming floats OR raw ints for ADC result
+
+
