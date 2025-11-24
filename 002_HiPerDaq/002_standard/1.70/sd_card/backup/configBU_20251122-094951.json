@@ -1,0 +1,681 @@
+{
+  "version": "1.0",
+  "creator": "PDP",
+  "name": "small_exp",
+  "mode": 14,
+  "liveRate": 1,
+  "expansionType": 8,
+  "binaryFormatControl": 1,
+  "streamConfig": 0,
+  "networking": {
+    "ipAddress": "192.168.2.177",
+    "subnetMask": "255.255.0.0",
+    "remoteIP": "0.0.0.0",
+    "udpStreamPort": 8080,
+    "udpCliPort": 1024,
+    "webServerPort": 80,
+    "webServerEnable": 1
+  },
+  "outMapping": {
+    "outBit_execution_state": 8,
+    "outBit_trigger_state": 8,
+    "outBit_readinessToExecute": 5,
+    "outBit_heartBeat": 7,
+    "outBit_modeRunning": 6,
+    "outBit_peripheralFault": 4,
+    "outBit_ethernetConnected": 3,
+    "outBit_bufferFull": 8,
+    "outBit_tone0": 8,
+    "outBit_tone1": 8,
+    "outBit_tone2": 8,
+    "outByte_mapping": 0,
+    "deviceIndex": 0
+  },
+  "logging": {
+    "duration": 2000,
+    "pollingPeriodTC": 100,
+    "pollingPeriodLsAdc": 100,
+    "pollingPeriodDio": 100,
+    "createAsciiRaw": 0,
+    "createBinaryReal": 0,
+    "createAsciiReal": 1,
+    "createWav": 0,
+    "createSpectrum": 1
+  },
+  "trigger": {
+    "type": 0,
+    "bytePattern": 8,
+    "bit": 8,
+    "encoderCount": 0,
+    "direction": 0,
+    "threshold": 13000
+  },
+  "adcMain": {
+    "osr": 15,
+    "bits": 24,
+    "channels": [
+      {
+        "name": "ch0",
+        "cpu": 278561.8438,
+        "units": "V",
+        "offset": 585,
+        "gain": 0,
+        "log": 1,
+        "chart": 255
+      },
+      {
+        "name": "ch1",
+        "cpu": 278757.0313,
+        "units": "V",
+        "offset": 1210,
+        "gain": 0,
+        "log": 1,
+        "chart": 255
+      },
+      {
+        "name": "ch2",
+        "cpu": 278665.9375,
+        "units": "V",
+        "offset": 990,
+        "gain": 0,
+        "log": 1,
+        "chart": 255
+      },
+      {
+        "name": "ch3",
+        "cpu": 278683.5938,
+        "units": "V",
+        "offset": 900,
+        "gain": 0,
+        "log": 1,
+        "chart": 255
+      }
+    ]
+  },
+  "exp-dio-8": [
+    {
+      "address": 0,
+      "bus": 1,
+      "type": 1,
+      "pullups": 0,
+      "chartmask": 0,
+      "invertMask": 0,
+      "installed": 1,
+      "use": 1,
+      "log": 1,
+      "names": [
+        "do0.0",
+        "do0.1",
+        "do0.2",
+        "do0.3",
+        "do0.4",
+        "do0.5",
+        "do0.6",
+        "do0.7"
+      ]
+    },
+    {
+      "address": 0,
+      "bus": 2,
+      "type": 1,
+      "pullups": 0,
+      "chartmask": 255,
+      "invertMask": 0,
+      "installed": 1,
+      "use": 1,
+      "log": 1,
+      "names": [
+        "do0.0",
+        "do0.1",
+        "do0.2",
+        "do0.3",
+        "do0.4",
+        "do0.5",
+        "do0.6",
+        "do0.7"
+      ]
+    },
+    {
+      "address": 1,
+      "bus": 2,
+      "type": 2,
+      "pullups": 255,
+      "chartmask": 255,
+      "invertMask": 255,
+      "installed": 1,
+      "use": 1,
+      "log": 1,
+      "names": [
+        "di0.0",
+        "di0.1",
+        "di0.2",
+        "di0.3",
+        "di0.4",
+        "di0.5",
+        "di0.6",
+        "di0.7"
+      ]
+    }
+  ],
+  "exp-adc-8": [
+    {
+      "address": 0,
+      "bus": 2,
+      "mode": 0,
+      "installed": 1,
+      "use": 1,
+      "channels": [
+        {
+          "name": "expAdc1Ch0",
+          "cpu": 793.1881104,
+          "units": "V",
+          "offset": 1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "expAdc1Ch1",
+          "cpu": 791.895874,
+          "units": "V",
+          "offset": 1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "expAdc1Ch2",
+          "cpu": 792.4778442,
+          "units": "V",
+          "offset": 1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "expAdc1Ch3",
+          "cpu": 793.4395752,
+          "units": "V",
+          "offset": 1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "expAdc1Ch4",
+          "cpu": 794.1015015,
+          "units": "V",
+          "offset": 1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "expAdc1Ch5",
+          "cpu": 794.1856079,
+          "units": "V",
+          "offset": 1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "expAdc1Ch6",
+          "cpu": 792.2080688,
+          "units": "V",
+          "offset": 1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "expAdc1Ch7",
+          "cpu": 793.0340576,
+          "units": "V",
+          "offset": 1,
+          "log": 1,
+          "chart": 1
+        }
+      ]
+    },
+    {
+      "address": 183,
+      "bus": 255,
+      "mode": 255,
+      "installed": 0,
+      "use": 0,
+      "channels": [
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        }
+      ]
+    },
+    {
+      "address": 183,
+      "bus": 255,
+      "mode": 255,
+      "installed": 0,
+      "use": 0,
+      "channels": [
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        }
+      ]
+    },
+    {
+      "address": 183,
+      "bus": 255,
+      "mode": 255,
+      "installed": 0,
+      "use": 0,
+      "channels": [
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        },
+        {
+          "name": "�����",
+          "cpu": 0,
+          "units": "��",
+          "offset": -1,
+          "log": 1,
+          "chart": 1
+        }
+      ]
+    }
+  ],
+  "exp-TC-4": [
+    {
+      "name": "TC1",
+      "channel": 1,
+      "address": 0,
+      "bus": 2,
+      "type": "K",
+      "res": 18,
+      "chart": 0,
+      "log": 1,
+      "installed": 1,
+      "use": 1
+    },
+    {
+      "name": "TC2",
+      "channel": 2,
+      "address": 1,
+      "bus": 2,
+      "type": "K",
+      "res": 18,
+      "chart": 255,
+      "log": 1,
+      "installed": 1,
+      "use": 1
+    },
+    {
+      "name": "TC3",
+      "channel": 3,
+      "address": 2,
+      "bus": 2,
+      "type": "K",
+      "res": 18,
+      "chart": 1,
+      "log": 1,
+      "installed": 1,
+      "use": 1
+    },
+    {
+      "name": "TC4",
+      "channel": 4,
+      "address": 3,
+      "bus": 2,
+      "type": "K",
+      "res": 18,
+      "chart": 18,
+      "log": 1,
+      "installed": 1,
+      "use": 1
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 0,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 0,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 0,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 0,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 0,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 239,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 191,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 189,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 239,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 191,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 0,
+      "chart": 189,
+      "log": 255,
+      "installed": 0,
+      "use": 0
+    },
+    {
+      "name": "�����",
+      "channel": 0,
+      "address": 255,
+      "bus": 255,
+      "type": "K",
+      "res": 255,
+      "chart": 0,
+      "log": 255,
+      "installed": 0,
+      "use": 255
+    }
+  ],
+  "EXP_LCD": {
+    "bus": 1,
+    "type": "",
+    "contrast": 300,
+    "name": "guiLcd",
+    "installed": 0,
+    "use": 0
+  },
+  "fft": {
+    "source": 0,
+    "binCount": 128,
+    "rate": 3
+  },
+  "tones": [
+    {
+      "freq": 1200,
+      "amp_threshold": -40,
+      "snr_threshold": 80,
+      "use": 0
+    },
+    {
+      "freq": 1200,
+      "amp_threshold": -40,
+      "snr_threshold": 80,
+      "use": 0
+    },
+    {
+      "freq": 1200,
+      "amp_threshold": -40,
+      "snr_threshold": 80,
+      "use": 0
+    }
+  ]
+}
